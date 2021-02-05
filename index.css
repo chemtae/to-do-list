@@ -16,9 +16,13 @@
   }
 }
 
-.js-form {
+.js-form input {
   border: none;
-  font-size: 18px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgba(12, 12, 10, 0.705);
+  text-align: center;
+  width: 300px;
 }
 
 .bgImage {
