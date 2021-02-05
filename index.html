@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   </head>
 
   <body>
@@ -17,10 +18,23 @@
     <div class="js-date">
       <h4 class="js-date-title">00/00/00</h4>
     </div>
+    
+    <a class="btn" onclick="popupToggle();">How to use it</a>
+    <div id="popup">
+      <a class="close" onclick="popupToggle();"><i class="fas fa-times"></i></a>
+      <div class="content_1">
+        <i class="fas fa-envelope-open-text"></i>
+          <p>if u want to delete your list, click ❌</p> 
+          <p>if u finished your lists, click 🔥</p>
+          <p>if u click F5, goals whose 🔥 are clicked will be erased</p>
+          <p>Please enjoy your wonderful time</p> 
+        </div>
+      </div>
+
     <div class="js-clock">
       <h1 class="js-title">00:00</h1>
     </div>
-    <form class="js-form form">
+     <form class="js-form form">
       <input type="text" placeholder="plz write your wonderful name:-)" />
     </form>
     <h4 class="js-greetings greetings"></h4>
@@ -28,7 +42,6 @@
       <input type="text" placeholder="Write to Do Here 👍🏼" />
     </form>
     <ul class="js-toDoList"></ul>
-
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
@@ -36,4 +49,10 @@
     <script src="weather.js"></script>
     <script src="date.js"></script>
   </body>
+  <script>
+    function popupToggle(){
+        const popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+</script>
 </html>

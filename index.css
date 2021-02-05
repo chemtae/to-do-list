@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .form,
 .greetings {
   display: none;
@@ -84,7 +88,7 @@ body {
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0);
   transition: 0.3s ease-in-out;
-  width: 150px;
+  width: 200px;
   outline: none;
 }
 
@@ -144,4 +148,68 @@ body {
 }
 .makeButton2 {
   opacity: 0.7;
+}
+.btn {
+  position: sticky;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px 15px;
+  background: #ab928b;
+  border-radius: 15px;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+.btn:hover {
+  letter-spacing: 2px;
+}
+#popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  width: 450px;
+  padding: 50px 30px 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+  visibility: hidden;
+}
+#popup.active {
+  visibility: visible;
+  top: 50%;
+}
+
+#popup .content_1 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#popup .content_1 i {
+  font-size: 40px;
+  color: #c185a1;
+}
+
+#popup .content_1 p {
+  text-align: center;
+  font-size: 16px;
+  color: #46223c;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #c185a1;
 }
