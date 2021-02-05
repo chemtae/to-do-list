@@ -16,6 +16,11 @@
   }
 }
 
+.js-form {
+  border: none;
+  font-size: 18px;
+}
+
 .bgImage {
   position: absolute;
   top: 0;
