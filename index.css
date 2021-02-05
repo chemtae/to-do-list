@@ -1,0 +1,138 @@
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+body {
+  background-color: #92b89c;
+}
+
+.js-clock,
+.js-toDoForm,
+.showing,
+#li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-clock {
+  margin-top: 30px;
+  font-size: 40px;
+  color: #555368;
+}
+
+.js-greetings {
+  color: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.showing {
+  font-size: 35px;
+  color: linear-gradient(to top, #008aff, #00ffe7);
+  margin-top: -20px;
+  animation: animate 5s linear infinite;
+}
+
+.js-toDoForm input {
+  border: none;
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 15px;
+  border-bottom: 2px solid rgba(12, 12, 10, 0.705);
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s ease-in-out;
+  width: 150px;
+  outline: none;
+}
+
+.js-toDoForm input::placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-weight: 600;
+}
+
+.js-toDoForm input:focus {
+  width: 350px;
+}
+
+.js-weather {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+.js-date {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: rgb(250, 209, 209);
+  font-size: 20px;
+  margin-right: 5px;
+}
+.js-toDoList {
+  list-style: none;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Serif KR", serif;
+  justify-content: center;
+}
+
+.makeButton,
+.makeButton2 {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 18px;
+}
+
+.makeAList {
+  transition: 0.2s linear;
+}
+.makeAList:hover {
+  font-size: 23px;
+}
+.makeButton2 {
+  opacity: 0.7;
+}

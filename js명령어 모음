@@ -1,0 +1,17 @@
+node.appendChild() : 자식요소를 추가함
+node.replaceChild() : 자식요소를 하나 지우고 새 노드로 교체함
+node.removeChild() : 자식요소를 삭제함
+
+
+
+자바로 text-decoration하는 방법
+document.getElementById("foo").style.textDecoration = "underline";
+
+event.target : 이벤트 객체의 정보를 받아오기
+element.removeChild(); ()속의 내용을 지우기
+
+Array<any>.filter(predicate: (value: any, index: number, array: any[]) : 
+
+
+li.classList.toggle("TODOS_LS", false); : flase면 삭제하라
+    li.classList.toggle("TODOS_LS", true); : true면 존재시켜라
